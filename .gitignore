@@ -19,3 +19,6 @@ DerivedData
 *.hmap
 *.ipa
 
+# Cocoapods
+Pods/
+Podfile.lock
