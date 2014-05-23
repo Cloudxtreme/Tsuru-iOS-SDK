@@ -34,6 +34,10 @@
 {
     XCTAssertEqualObjects(unit.name, @"unit_name");
     XCTAssertEqualObjects(unit.type, @"unit_type");
+    XCTAssertEqual(unit.machine, 0);
+    XCTAssertEqualObjects(unit.instanceId, @"123");
+    XCTAssertEqualObjects(unit.ip, @"127.0.0.1");
+    XCTAssertEqualObjects(unit.state, @"unit_state");
 }
 
 @end

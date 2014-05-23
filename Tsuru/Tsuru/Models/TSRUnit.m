@@ -7,6 +7,7 @@
 //
 
 #import "TSRUnit.h"
+#import "JSONKeyMapper+TsuruModel.h"
 
 @implementation TSRUnit
 
@@ -17,10 +18,7 @@
 
 + (JSONKeyMapper *)keyMapper
 {
-    return [[JSONKeyMapper alloc] initWithDictionary:@{
-        @"Name": @"name",
-        @"Type": @"type",
-    }];
+    return [JSONKeyMapper mapperFromPascalCaseToCamelCase];
 }
 
 @end
