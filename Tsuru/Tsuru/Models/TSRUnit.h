@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JSONModel.h"
 
-@interface TSRUnit : NSObject
+@interface TSRUnit : JSONModel
 
 @property (copy, nonatomic) NSString *name;
 @property (copy, nonatomic) NSString *type;
-@property (assign, nonatomic) NSUInteger *machine;
+@property (assign, nonatomic) NSUInteger machine;
 @property (copy, nonatomic) NSString *instanceId;
 @property (copy, nonatomic) NSString *ip;
 @property (copy, nonatomic) NSString *state;

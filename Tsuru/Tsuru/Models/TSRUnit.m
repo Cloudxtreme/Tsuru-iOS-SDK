@@ -10,4 +10,17 @@
 
 @implementation TSRUnit
 
++ (BOOL)propertyIsOptional:(NSString *)propertyName
+{
+    return YES;
+}
+
++ (JSONKeyMapper *)keyMapper
+{
+    return [[JSONKeyMapper alloc] initWithDictionary:@{
+        @"Name": @"name",
+        @"Type": @"type",
+    }];
+}
+
 @end

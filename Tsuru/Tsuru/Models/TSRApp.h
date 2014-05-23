@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <JSONModel/JSONModel.h>
+#import "JSONModel.h"
+
+@protocol TSRUnit <NSObject>
+@end
 
 @interface TSRApp : JSONModel
 
@@ -22,6 +25,6 @@
 @property (copy, nonatomic) NSString *repository;
 @property (copy, nonatomic) NSString *swap;
 @property (copy, nonatomic) NSArray *teams;
-@property (copy, nonatomic) NSArray *units;
+@property (copy, nonatomic) NSArray<TSRUnit> *units;
 
 @end

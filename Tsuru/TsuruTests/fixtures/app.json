@@ -1,0 +1,26 @@
+
+  {
+  "cname": "",
+  "deploys": 0,
+  "ip": "127.0.0.1",
+  "memory": "512",
+  "name": "india",
+  "owner": "mobileapp@corp.globo.com",
+  "platform": "python",
+  "ready": true,
+  "repository": "tsuru-git@git.tsuru.globoi.com:india.git",
+  "swap": "1024",
+  "teams": [
+            "mobile-app"
+            ],
+  "units": [
+            {
+            "Name": "",
+            "Type": "",
+            "Machine": 0,
+            "InstanceId": "",
+            "Ip": "",
+            "State": ""
+            }
+            ]
+  }

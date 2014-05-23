@@ -6,10 +6,13 @@
 //  Copyright (c) 2014 globo.com. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
+#import "TSRModelTestCase.h"
+#import "TSRApp.h"
 
-@interface TSRAppTestCase : XCTestCase
-
+@interface TSRAppTestCase : TSRModelTestCase
+{
+    TSRApp *app;
+}
 @end
 
 @implementation TSRAppTestCase
@@ -17,18 +20,28 @@
 - (void)setUp
 {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    app = [[TSRApp alloc] initWithString:[self jsonWithName:@"app"] error:nil];
 }
 
 - (void)tearDown
 {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    app = nil;
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testModelMapping
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    XCTAssertEqualObjects(app.cname, @"");
+    XCTAssertEqual(app.deploys, 0);
+    XCTAssertEqualObjects(app.ip, @"127.0.0.1");
+    XCTAssertEqualObjects(app.memory, @"512");
+    XCTAssertEqualObjects(app.name, @"india");
+    XCTAssertEqualObjects(app.owner, @"mobileapp@corp.globo.com");
+    XCTAssertEqualObjects(app.platform, @"python");
+    XCTAssert([app isReady]);
+    XCTAssertEqualObjects(app.repository, @"tsuru-git@git.tsuru.globoi.com:india.git");
+    XCTAssertEqualObjects(app.swap, @"1024");
+    XCTAssertEqual([app.units count], 1);
 }
 
 @end

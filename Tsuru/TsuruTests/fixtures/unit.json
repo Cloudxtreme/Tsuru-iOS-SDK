@@ -1,0 +1,8 @@
+{
+    "Name": "unit_name",
+    "Type": "unit_type",
+    "Machine": 0,
+    "InstanceId": "123",
+    "Ip": "127.0.0.1",
+    "State": "unit_state"
+}
