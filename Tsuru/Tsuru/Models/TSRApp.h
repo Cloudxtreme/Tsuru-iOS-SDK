@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <JSONModel/JSONModel.h>
 
-@interface TSRApp : NSObject
+@interface TSRApp : JSONModel
 
 @property (copy, nonatomic) NSString *cname;
 @property (assign, nonatomic) NSUInteger deploys;
