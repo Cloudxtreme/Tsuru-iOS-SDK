@@ -1,1 +1,7 @@
 pod 'JSONModel'
+
+target :TsuruTests do
+  pod 'OHHTTPStubs'
+  pod 'Expecta'
+  pod 'Tsuru-iOS-SDK', :path => '../'
+end

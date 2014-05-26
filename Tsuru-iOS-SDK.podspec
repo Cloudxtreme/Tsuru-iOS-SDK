@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/tsurupaas'
   s.platform         = :ios, '5.0'
   s.requires_arc     = true
-  s.source_files     = 'Classes/**/*.{h,m}'
+  s.source_files     = 'Tsuru/Tsuru/**/*.{h,m}'
   s.dependency       'JSONModel'
 end
 
