@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JSONModel.h"
 
-@interface TSRTeam : NSObject
+@interface TSRTeam : JSONModel
 
 @property (copy, nonatomic) NSString *name;
 

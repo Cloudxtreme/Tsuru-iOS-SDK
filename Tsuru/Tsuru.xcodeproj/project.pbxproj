@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		153D13FB192F97E70084005F /* app.json in Resources */ = {isa = PBXBuildFile; fileRef = 153D13FA192F97E70084005F /* app.json */; };
+		153D1403192FDC940084005F /* TSRModelTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 153D1402192FDC940084005F /* TSRModelTestCase.m */; };
+		153D1406192FECCC0084005F /* TSRUnitTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 153D1405192FECCC0084005F /* TSRUnitTestCase.m */; };
+		153D1408192FECE60084005F /* unit.json in Resources */ = {isa = PBXBuildFile; fileRef = 153D1407192FECE60084005F /* unit.json */; };
+		153D140C192FF9AC0084005F /* JSONKeyMapper+TsuruModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 153D140B192FF9AC0084005F /* JSONKeyMapper+TsuruModel.m */; };
+		1551BFD21933C26E00475769 /* TSRTeamTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551BFD11933C26E00475769 /* TSRTeamTestCase.m */; };
+		1551BFD41933C2C400475769 /* team.json in Resources */ = {isa = PBXBuildFile; fileRef = 1551BFD31933C2C400475769 /* team.json */; };
 		1595DBF1192F8F7C00433F65 /* TSRApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 1595DBE0192F8F7C00433F65 /* TSRApp.m */; };
 		1595DBF2192F8F7C00433F65 /* TSREnvironmentVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1595DBE2192F8F7C00433F65 /* TSREnvironmentVariable.m */; };
 		1595DBF3192F8F7C00433F65 /* TSRPlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 1595DBE4192F8F7C00433F65 /* TSRPlatform.m */; };
@@ -25,7 +31,6 @@
 		1596AC0C192F8E2400F3E3F3 /* libTsuru.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1596ABF4192F8E2400F3E3F3 /* libTsuru.a */; };
 		1596AC12192F8E2400F3E3F3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1596AC10192F8E2400F3E3F3 /* InfoPlist.strings */; };
 		2E68E60E175F4C99B0EEC0CD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 520B36A3283B40A1B79CD1EF /* libPods.a */; };
-		CBC74846FCD246C699750CD7 /* libPods-TsuruTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA73161421542A28EBAD8EE /* libPods-TsuruTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +57,14 @@
 
 /* Begin PBXFileReference section */
 		153D13FA192F97E70084005F /* app.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = app.json; sourceTree = "<group>"; };
+		153D1401192FDC940084005F /* TSRModelTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSRModelTestCase.h; sourceTree = "<group>"; };
+		153D1402192FDC940084005F /* TSRModelTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSRModelTestCase.m; sourceTree = "<group>"; };
+		153D1405192FECCC0084005F /* TSRUnitTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSRUnitTestCase.m; sourceTree = "<group>"; };
+		153D1407192FECE60084005F /* unit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = unit.json; sourceTree = "<group>"; };
+		153D140A192FF9AC0084005F /* JSONKeyMapper+TsuruModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONKeyMapper+TsuruModel.h"; sourceTree = "<group>"; };
+		153D140B192FF9AC0084005F /* JSONKeyMapper+TsuruModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONKeyMapper+TsuruModel.m"; sourceTree = "<group>"; };
+		1551BFD11933C26E00475769 /* TSRTeamTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSRTeamTestCase.m; sourceTree = "<group>"; };
+		1551BFD31933C2C400475769 /* team.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = team.json; sourceTree = "<group>"; };
 		1595DBDF192F8F7C00433F65 /* TSRApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSRApp.h; sourceTree = "<group>"; };
 		1595DBE0192F8F7C00433F65 /* TSRApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSRApp.m; sourceTree = "<group>"; };
 		1595DBE1192F8F7C00433F65 /* TSREnvironmentVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSREnvironmentVariable.h; sourceTree = "<group>"; };
@@ -103,7 +116,6 @@
 				1596AC09192F8E2400F3E3F3 /* UIKit.framework in Frameworks */,
 				1596AC07192F8E2400F3E3F3 /* Foundation.framework in Frameworks */,
 				1596AC0C192F8E2400F3E3F3 /* libTsuru.a in Frameworks */,
-				CBC74846FCD246C699750CD7 /* libPods-TsuruTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,8 +126,19 @@
 			isa = PBXGroup;
 			children = (
 				153D13FA192F97E70084005F /* app.json */,
+				153D1407192FECE60084005F /* unit.json */,
+				1551BFD31933C2C400475769 /* team.json */,
 			);
 			path = fixtures;
+			sourceTree = "<group>";
+		};
+		153D1409192FF9950084005F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				153D140A192FF9AC0084005F /* JSONKeyMapper+TsuruModel.h */,
+				153D140B192FF9AC0084005F /* JSONKeyMapper+TsuruModel.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		1595DBDE192F8F7C00433F65 /* Models */ = {
@@ -146,7 +169,11 @@
 		1595DC00192F90D800433F65 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				153D1401192FDC940084005F /* TSRModelTestCase.h */,
+				153D1402192FDC940084005F /* TSRModelTestCase.m */,
 				1595DC01192F90F800433F65 /* TSRAppTestCase.m */,
+				153D1405192FECCC0084005F /* TSRUnitTestCase.m */,
+				1551BFD11933C26E00475769 /* TSRTeamTestCase.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -187,6 +214,7 @@
 		1596ABF9192F8E2400F3E3F3 /* Tsuru */ = {
 			isa = PBXGroup;
 			children = (
+				153D1409192FF9950084005F /* Categories */,
 				1595DBDE192F8F7C00433F65 /* Models */,
 				1596ABFA192F8E2400F3E3F3 /* Supporting Files */,
 			);
@@ -294,6 +322,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1551BFD41933C2C400475769 /* team.json in Resources */,
+				153D1408192FECE60084005F /* unit.json in Resources */,
 				1596AC12192F8E2400F3E3F3 /* InfoPlist.strings in Resources */,
 				153D13FB192F97E70084005F /* app.json in Resources */,
 			);
@@ -373,6 +403,7 @@
 				1595DBF4192F8F7C00433F65 /* TSRQuota.m in Sources */,
 				1595DBF1192F8F7C00433F65 /* TSRApp.m in Sources */,
 				1595DBF6192F8F7C00433F65 /* TSRServiceInstance.m in Sources */,
+				153D140C192FF9AC0084005F /* JSONKeyMapper+TsuruModel.m in Sources */,
 				1595DBF9192F8F7C00433F65 /* TSRUser.m in Sources */,
 				1595DBF2192F8F7C00433F65 /* TSREnvironmentVariable.m in Sources */,
 				1595DBF8192F8F7C00433F65 /* TSRUnit.m in Sources */,
@@ -385,7 +416,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1551BFD21933C26E00475769 /* TSRTeamTestCase.m in Sources */,
 				1595DC02192F90F800433F65 /* TSRAppTestCase.m in Sources */,
+				153D1406192FECCC0084005F /* TSRUnitTestCase.m in Sources */,
+				153D1403192FDC940084005F /* TSRModelTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
